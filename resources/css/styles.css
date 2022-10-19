@@ -1,0 +1,24 @@
+h1 {
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 1rem 0 1.68rem 0;
+  text-align: center;
+}
+form{
+  text-align: center;
+}
+.claseformulario{
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#botonDeEnvio{
+font-size: x-large;
+}
+td,th{ 
+    text-align:center;
+    padding:10px;
+    border: solid red 1px; 
+}
+.tableFormat table{ 
+  margin: 10px auto
+}

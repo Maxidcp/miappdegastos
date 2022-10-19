@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="uf-8">
+  <title>Mi economia</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="resources\css\styles.css">
+
+</head>  
+
+
+<body>
+  <h1>Mi aplicacion para gastos</h1>
+  
+  <div class="row">
+    <div class="col l5 offset-l1 s12 ">
+      <table id="transactionTable">
+        <caption>Historial de transacciones</caption>
+          <tr>
+              <th>Tipo</th>
+              <th>Descripcion</th>
+              <th>Monto</th>
+              <th>Categoría</th>
+              <th>Eliminar</th>
+          </tr>
+      
+      </table>
+    </div>
+    <div class="col l5 s12">
+      <div class="col s8 offset-s2">
+        <form id="transactionForm">
+          <div class="claseformulario">
+            <p>
+              <span>Transacción</span>
+              <label for="ingreso">
+                <i class="material-icons">add</i>
+                <input class="with-gap" name="transactionType" type="radio" checked id="ingreso" value="Ingreso"/>
+                <span>Ingreso</span>
+              </label>
+              <label for="Egreso">
+                <i class="material-icons">indeterminate_check_box</i>
+                <input class="with-gap" name="transactionType" type="radio" checked id="Egreso" value="Egreso"/>
+                <span>Egreso</span>
+              </label>
+            </p>
+                  </div>    
+          <div class="input-field">
+            <label for="transactionDescription">Description</label>
+            <input required id="transactionDescription" name="transactionDescription" class="validate" type="text">
+          </div>
+
+
+          <div class="input-field">
+            <label for="transactionAmount">Monto</label>
+            <input required id="transactionAmount" name="transactionAmount" class="validate" type="number">
+          </div>
+          <div class="claseformulario">
+              <label for="transactionCategory">Categoria</label>
+              <select class="browser-default" required id="transactionCategory" name="transactionCategory">
+              </select>
+              
+          </div>
+          <br>
+          <div class="claseformulario">
+          <button class="btn waves-effect waves-light" id="botonDeEnvio" name="botonDeEnvio">Añadir
+          <i class="material-icons right">send</i>
+          </button>  
+          </div>
+          
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src ="resources\js\scripts.js"></script>
+
+</body>
+
+
+</html>
+ 
